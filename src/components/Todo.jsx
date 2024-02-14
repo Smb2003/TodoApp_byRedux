@@ -18,16 +18,9 @@ export const Todo = () => {
         dispatch(addItems(Selector.Data_Items.data))
     }
     const Delete = (e,index) => {
-        console.log(e.Children)
+        e.parentElement.parentElement.remove()
 
-        // Selector.Todo_List.list.splice(e,1)
-        console.log(e);
-        console.log(index);
-
-        // dispatch(addItems([...Selector.Todo_List.list]))
-        // setUser([...user])
-
-    //   console.log(Selector.Todo_List.list);
+       
     }
   return (
     <div className='max-w-sm md:w-4/5 h-auto p-2  '>
